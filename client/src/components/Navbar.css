@@ -1,0 +1,110 @@
+.navbar {
+  background: #0a0a0a;
+  padding: 0 2.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 68px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 1px solid #222;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+}
+
+.brand-icon { font-size: 1.4rem; }
+
+.brand-text {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: #39ff14;
+  letter-spacing: 3px;
+  text-shadow: 0 0 20px rgba(57,255,20,0.5);
+}
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.nav-link {
+  color: #888;
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  transition: color 0.2s;
+}
+
+.nav-link:hover { color: #39ff14; }
+
+.cart-link {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.cart-badge {
+  background: #39ff14;
+  color: #0a0a0a;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.65rem;
+  font-weight: 800;
+}
+
+.nav-username { color: #444; font-size: 0.8rem; letter-spacing: 0.5px; }
+
+.btn-logout {
+  background: transparent;
+  border: 1px solid #222;
+  color: #888;
+  padding: 0.45rem 1.1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: all 0.2s;
+}
+
+.btn-logout:hover { border-color: #39ff14; color: #39ff14; }
+
+.btn-register {
+  background: #39ff14;
+  color: #0a0a0a;
+  text-decoration: none;
+  padding: 0.5rem 1.3rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  transition: all 0.2s;
+}
+
+.btn-register:hover {
+  background: #2dd10f;
+  box-shadow: 0 0 20px rgba(57,255,20,0.4);
+}
+
+@media (max-width: 600px) {
+  .navbar { padding: 0 1rem; }
+  .nav-username { display: none; }
+  .navbar-links { gap: 1rem; }
+}

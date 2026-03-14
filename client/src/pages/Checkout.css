@@ -1,0 +1,110 @@
+.checkout-page { background: #0a0a0a; min-height: calc(100vh - 68px); padding: 2rem 1rem; }
+.checkout-container { max-width: 1000px; margin: 0 auto; }
+
+.checkout-container h1 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 2.5rem;
+  color: #fff;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+}
+
+.steps { display: flex; align-items: center; margin-bottom: 2rem; }
+
+.step { display: flex; align-items: center; gap: 0.5rem; font-size: 0.78rem; font-weight: 600; color: #333; letter-spacing: 1px; text-transform: uppercase; }
+.step.active { color: #39ff14; }
+
+.step-num {
+  width: 26px; height: 26px; border-radius: 50%;
+  background: #1c1c1c; display: flex; align-items: center;
+  justify-content: center; font-size: 0.75rem; font-weight: 700; color: #444; border: 1px solid #222;
+}
+
+.step.active .step-num { background: #39ff14; color: #0a0a0a; border-color: #39ff14; box-shadow: 0 0 12px rgba(57,255,20,0.4); }
+.step-line { flex: 0 0 50px; height: 1px; background: #1c1c1c; margin: 0 0.75rem; }
+
+.checkout-layout { display: grid; grid-template-columns: 1fr 280px; gap: 2rem; align-items: start; }
+
+.checkout-card { background: #111; border-radius: 3px; padding: 2rem; border: 1px solid #1c1c1c; }
+
+.checkout-card h3 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.3rem;
+  color: #fff;
+  margin: 0 0 1.5rem;
+  letter-spacing: 2px;
+}
+
+.checkout-form { display: flex; flex-direction: column; gap: 1.25rem; }
+.form-group { display: flex; flex-direction: column; gap: 0.4rem; }
+
+.form-group label { font-size: 0.7rem; font-weight: 700; color: #444; letter-spacing: 2px; text-transform: uppercase; }
+
+.form-input {
+  padding: 0.8rem 1rem; border: 1px solid #1c1c1c; border-radius: 3px;
+  font-size: 0.9rem; outline: none; transition: border-color 0.2s, box-shadow 0.2s;
+  box-sizing: border-box; width: 100%; background: #161616; color: #fff;
+}
+
+.form-input::placeholder { color: #333; }
+.form-input:focus { border-color: #39ff14; box-shadow: 0 0 0 2px rgba(57,255,20,0.08); }
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+
+.next-btn {
+  background: #39ff14; color: #0a0a0a; border: none; padding: 0.9rem;
+  border-radius: 3px; font-size: 0.8rem; font-weight: 700; cursor: pointer;
+  margin-top: 0.5rem; letter-spacing: 2px; text-transform: uppercase; transition: all 0.2s;
+}
+
+.next-btn:hover { box-shadow: 0 0 24px rgba(57,255,20,0.3); background: #2dd10f; }
+
+.review-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem; }
+
+.edit-btn {
+  background: transparent; border: 1px solid #222; color: #444;
+  padding: 0.35rem 0.9rem; border-radius: 3px; cursor: pointer;
+  font-size: 0.72rem; letter-spacing: 1px; text-transform: uppercase; transition: all 0.2s;
+}
+
+.edit-btn:hover { border-color: #39ff14; color: #39ff14; }
+
+.shipping-summary { background: #161616; border-radius: 3px; padding: 1rem; margin-bottom: 1.5rem; font-size: 0.85rem; color: #666; line-height: 1.7; border: 1px solid #1c1c1c; }
+.shipping-summary p { margin: 0.2rem 0; }
+
+.order-items { display: flex; flex-direction: column; gap: 0.75rem; margin-bottom: 1.5rem; }
+
+.review-item { display: flex; align-items: center; gap: 1rem; padding: 0.75rem 0; border-bottom: 1px solid #1c1c1c; }
+.review-item img { width: 50px; height: 50px; object-fit: cover; border-radius: 2px; filter: grayscale(10%); }
+.review-item-info { flex: 1; }
+.review-item-name { font-size: 0.85rem; font-weight: 600; color: #fff; margin: 0 0 0.2rem; }
+.review-item-qty { font-size: 0.75rem; color: #444; margin: 0; }
+.review-item-price { font-weight: 700; color: #39ff14; font-size: 0.9rem; }
+
+.payment-method { background: #0f1a0f; border: 1px solid #1a3a1a; border-radius: 3px; padding: 0.75rem 1rem; font-size: 0.85rem; color: #39ff14; margin-bottom: 1.5rem; }
+.payment-method p { margin: 0; }
+
+.place-order-btn {
+  width: 100%; background: #39ff14; color: #0a0a0a; border: none; padding: 1rem;
+  border-radius: 3px; font-size: 0.85rem; font-weight: 700; cursor: pointer;
+  letter-spacing: 2px; text-transform: uppercase; transition: all 0.2s;
+}
+
+.place-order-btn:hover:not(:disabled) { box-shadow: 0 0 28px rgba(57,255,20,0.4); background: #2dd10f; }
+.place-order-btn:disabled { background: #1c1c1c; color: #333; cursor: not-allowed; }
+
+.price-summary { background: #111; border-radius: 3px; padding: 1.75rem; border: 1px solid #1c1c1c; position: sticky; top: 84px; }
+
+.price-summary h3 {
+  font-family: 'Bebas Neue', sans-serif; font-size: 1.2rem; color: #fff;
+  margin: 0 0 1.25rem; padding-bottom: 1rem; border-bottom: 1px solid #1c1c1c; letter-spacing: 2px;
+}
+
+.price-row { display: flex; justify-content: space-between; font-size: 0.82rem; color: #555; margin-bottom: 0.75rem; }
+.price-divider { height: 1px; background: #1c1c1c; margin: 1rem 0; }
+.free-text { color: #39ff14; font-weight: 700; }
+.total-price-row { font-size: 0.95rem; font-weight: 700; color: #fff; }
+
+@media (max-width: 768px) {
+  .checkout-layout { grid-template-columns: 1fr; }
+  .form-row { grid-template-columns: 1fr; }
+}
