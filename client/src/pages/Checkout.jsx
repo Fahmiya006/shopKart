@@ -51,7 +51,7 @@ export default function Checkout() {
       };
       const token = user.token.trim();
 
-      await axios.post('/api/orders', orderData, {
+      await axios.post('https://shopkart-backend-tp4x.onrender.com/api/orders', orderData, {
         headers: { Authorization: `Bearer ${token}` },
       });
 
