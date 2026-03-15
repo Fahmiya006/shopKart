@@ -12,6 +12,7 @@ import Checkout from './pages/Checkout';
 import Orders from './pages/Orders';
 import AdminDashboard from './pages/AdminDashboard';
 
+
 console.log('Navbar:', Navbar);
 console.log('Home:', Home);
 console.log('Login:', Login);
