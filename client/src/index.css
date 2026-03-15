@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
 
 * {
   margin: 0;
@@ -7,22 +7,23 @@
 }
 
 :root {
-  --bg-primary: #0a0a0a;
-  --bg-secondary: #111111;
-  --bg-card: #161616;
-  --bg-card-hover: #1c1c1c;
-  --green: #39ff14;
-  --green-dim: #2dd10f;
-  --green-glow: rgba(57,255,20,0.15);
-  --green-border: rgba(57,255,20,0.25);
+  --bg-primary: #0f0f1a;
+  --bg-secondary: #16162a;
+  --bg-card: #1a1a2e;
+  --bg-card-hover: #1e1e35;
+  --violet: #7c3aed;
+  --violet-light: #a78bfa;
+  --violet-dark: #6d28d9;
+  --violet-glow: rgba(124,58,237,0.2);
+  --violet-border: rgba(124,58,237,0.3);
   --text-primary: #ffffff;
-  --text-secondary: #888888;
-  --text-muted: #555555;
-  --border: #222222;
-  --border-light: #2a2a2a;
-  --white: #ffffff;
-  --danger: #ff3b3b;
-  --success: #39ff14;
+  --text-secondary: #a0a0c0;
+  --text-muted: #555577;
+  --border: #1e1e35;
+  --border-light: #252540;
+  --success: #10b981;
+  --danger: #ef4444;
+  --warning: #f59e0b;
 }
 
 body {
@@ -32,15 +33,11 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-h1, h2, h3 {
-  font-family: 'Bebas Neue', sans-serif;
-  letter-spacing: 1px;
-}
-
 a { text-decoration: none; }
 button { font-family: 'Inter', sans-serif; }
 input, textarea, select { font-family: 'Inter', sans-serif; }
 
-::-webkit-scrollbar { width: 4px; }
-::-webkit-scrollbar-track { background: #0a0a0a; }
-::-webkit-scrollbar-thumb { background: #39ff14; border-radius: 2px; }
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: #0f0f1a; }
+::-webkit-scrollbar-thumb { background: #7c3aed; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #a78bfa; }
