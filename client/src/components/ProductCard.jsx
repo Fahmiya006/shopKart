@@ -1,11 +1,8 @@
 import { useCart } from '../context/CartContext';
 import './ProductCard.css';
-import { useNavigate } from 'react-router-dom';
 
 export default function ProductCard({ product }) {
   const { addToCart } = useCart();
-
-  const navigate = useNavigate();
 
   const handleAdd = () => {
     addToCart(product);
@@ -13,9 +10,7 @@ export default function ProductCard({ product }) {
     };
   
 
-  const stars = (rating) => {
-    return '★'.repeat(Math.round(rating)) + '☆'.repeat(5 - Math.round(rating));
-  };
+  
 
   return (
     <div className="product-card">
@@ -30,15 +25,7 @@ export default function ProductCard({ product }) {
             ? product.description.substring(0, 90) + '...'
             : product.description}
         </p>
-        <div className="product-rating">
-          <span className="stars">{stars(product.rating)}</span>
-          <span className="review-count">({product.numReviews})</span>
-        </div>
-        <div
-  className="product-image-wrap"
-  onClick={() => navigate(`/product/${product._id}`)}
-  style={{ cursor: 'pointer' }}
-></div>
+        
         <div className="product-footer">
           <span className="product-price">₹{product.price.toFixed(2)}</span>
           <button
